@@ -405,3 +405,87 @@ KeyError: 'channel_id'
 [32m2024-12-23 20:03:21,395 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
 [32m2024-12-23 20:03:21,401 - __main__ - INFO - Loaded cog: ping.py[0m
 [32m2024-12-23 20:05:58,382 - __main__ - INFO - Commands synced globally.[0m
+[34m2024-12-23 20:15:48,208 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:15:48,209 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:15:50,605 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e712c29949266e3088a6a9b4834260f0).[0m
+[32m2024-12-23 20:15:52,611 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:15:52,622 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:15:52,625 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:16:02,566 - __main__ - INFO - Commands synced globally.[0m
+[32m2024-12-23 20:18:12,890 - cogs.ping - INFO - Ping command executed. Latency: 426ms[0m
+[34m2024-12-23 20:19:27,299 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:19:27,300 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:19:29,953 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2a9066456b829d3aa69a28421a390bff).[0m
+[32m2024-12-23 20:19:31,959 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:19:31,964 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:19:31,967 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:19:40,623 - __main__ - INFO - Commands synced globally.[0m
+[34m2024-12-23 20:23:51,427 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:23:51,428 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:23:53,991 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 5db190b2912d9730406d2a8663b46679).[0m
+[32m2024-12-23 20:23:55,999 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:23:56,010 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:23:56,014 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:24:03,061 - __main__ - INFO - Commands synced globally.[0m
+[34m2024-12-23 20:25:39,569 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:25:39,569 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:25:43,136 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0b13cf77f764ff7755e2b5cda9baeeef).[0m
+[32m2024-12-23 20:25:45,142 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:25:45,149 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:25:45,152 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:25:53,061 - __main__ - INFO - Commands synced globally.[0m
+[31m2024-12-23 20:27:00,476 - discord.app_commands.tree - ERROR - Ignoring exception in command 'remindme'[0m
+Traceback (most recent call last):
+  File "/home/pyguy/Documents/Hermes/cogs/message_cog.py", line 23, in remind_me
+    await interaction.response.send_message(f"Reminder set! I will remind you in {time} seconds.")
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/interactions.py", line 778, in send_message
+    await adapter.create_interaction_response(
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/webhook/async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/app_commands/commands.py", line 841, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+  File "/home/pyguy/Documents/Hermes/cogs/message_cog.py", line 28, in remind_me
+    await interaction.response.send_message('An error occurred while setting the reminder.')
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/interactions.py", line 778, in send_message
+    await adapter.create_interaction_response(
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/webhook/async_.py", line 219, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/app_commands/tree.py", line 1248, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/app_commands/commands.py", line 867, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/pyguy/Documents/Hermes/.venv/lib/python3.10/site-packages/discord/app_commands/commands.py", line 860, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'remindme' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[32m2024-12-23 20:27:57,931 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: hello[0m
+[32m2024-12-23 20:28:43,684 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: You're gay[0m
+[32m2024-12-23 20:29:39,888 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: This seems easy[0m
+[34m2024-12-23 20:29:52,890 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:29:52,890 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:29:55,190 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: abe88223e47246c4d1fc6bbd8899add7).[0m
+[32m2024-12-23 20:29:57,196 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:29:57,200 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:29:57,202 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:30:33,760 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: You are a homosexual[0m
+[34m2024-12-23 20:34:16,777 - asyncio - DEBUG - Using selector: EpollSelector[0m
+[32m2024-12-23 20:34:16,777 - discord.client - INFO - logging in using static token[0m
+[32m2024-12-23 20:34:19,029 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d3ea0f261e7ca236bb7f671659d605cb).[0m
+[32m2024-12-23 20:34:21,034 - __main__ - INFO - Logged in as Hermes (1320826028410540082)[0m
+[32m2024-12-23 20:34:21,061 - __main__ - INFO - Loaded cog: message_cog.py[0m
+[32m2024-12-23 20:34:21,065 - __main__ - INFO - Loaded cog: ping.py[0m
+[32m2024-12-23 20:34:25,488 - __main__ - INFO - Commands synced globally.[0m
+[34m2024-12-23 20:36:14,033 - parsedatetime - DEBUG - eval 20:37 with context - False, False[0m
+[32m2024-12-23 20:37:01,983 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: YOOO[0m
+[34m2024-12-23 20:37:33,624 - parsedatetime - DEBUG - eval 10 with context - False, False[0m
+[34m2024-12-23 20:38:22,732 - parsedatetime - DEBUG - eval 20:40:35 with context - False, False[0m
+[32m2024-12-23 20:40:36,700 - cogs.message_cog - INFO - Reminder set for the_real_gaius#0 with message: this mf mf doom[0m
